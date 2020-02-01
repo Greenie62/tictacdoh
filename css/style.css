@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    position:relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.app{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-evenly;
+    height:100vh;
+    width:100vw;
+  
+}
+
+.gameboard{
+    
+ 
+    width:25%;
+    margin:0 auto;
+    display:grid;
+    align-items:center;
+    grid-gap:0;
+    grid-template-columns:repeat(3, 1fr)
+}
+
+.tile{
+    height:100px;
+    width:100px;
+    outline:1px solid black;
+}
+
+
+
+
+.tile.x:hover::after{
+    content:"X";
+    font-size:35px;
+    position:absolute;
+    top:30%;
+    left:30%;
+    opacity:.7;
+}
+
+.tile.o:hover::after{
+    content:"O";
+    font-size:35px;
+    position:absolute;
+    top:30%;
+    left:30%;
+    opacity:.7;
+}
+
+.playermark{
+    left:30%;
+    top:30%;
+    font-size:60px;
+    opacity:.9;
+}
